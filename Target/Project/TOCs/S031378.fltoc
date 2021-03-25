@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="PDF folder">
+    <TocEntry
+      Title="adwda" />
+    <TocEntry
+      Title="MadCapFlare_VPAT"
+      Link="/Content/Resources/PDFs/MadCapFlare_VPAT.pdf" />
+  </TocEntry>
+  <TocEntry
+    Title="PDF folder 2">
+    <TocEntry
+      Title="New Entry" />
+  </TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/test.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+</CatapultToc>

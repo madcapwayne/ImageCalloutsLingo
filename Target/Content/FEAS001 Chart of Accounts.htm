@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head><title></title>
+        <link href="Resources/Stylesheets/S031378.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">FEAS001 Chart of Accounts</h1>
+        <p>
+            <MadCap:footnote style="mc-footnote-position: topic;">My new footnote</MadCap:footnote>
+        </p>
+        <p class="BodyText">Team Content &gt; Finance Enterprise &gt; Finance &gt; Reports &gt; Account Structure</p>
+        <p class="BodyText">
+            <MadCap:footnote style="mc-footnote-position: chapter;">My new footnote</MadCap:footnote>
+        </p>
+        <table class="table_1">
+            <col class="col_1" />
+            <col class="col_2" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="BodyText">Prompt</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="BodyText">Description</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="BodyText">Fiscal Year</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="BodyText"> <span class="span_1">Required </span>Chart of Accounts returns valid key/object combinations based on accounts contained within the Budget tables. Fiscal Year is required to return the valid accounts for a specific Fiscal Year.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="BodyText">Ledger</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="BodyText"> <span class="span_1">Required </span>Select the Ledger for which to return the valid accounts. Only one selection is permitted.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="BodyText">Fund(s)</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="BodyText"> <span class="span_1">Optional </span>Users may select one or multiple Funds to include in the report. No selection is necessary. If no selection is made the report will run without a filter on Fund and all Funds will be included in the output.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="BodyText">Object Type</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="BodyText"> <span class="span_1">Optional </span>Users may select one or multiple Object Types to include in the report. No selection is necessary. If no selection is made the report will run without a filter on Object Type and all Types will be included in the output.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="BodyText">Page Break</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="BodyText"> <span class="span_1">Required </span>Users can select the desired page break for the report.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="BodyText">Chart of Accounts returns valid Key – Object combinations by Fund for the selected Fiscal Years and Ledgers.</p>
+        <p class="BodyText">Selections made on the prompt page will be <span class="span_2">displayed </span>in the <span class="span_2">report header. </span>Budget <span class="span_2">Version </span>is <span class="span_2">hard </span>coded to Default version for the selected Fiscal <span class="span_2">Year </span>and is also <span class="span_2">displayed </span>in the <span class="span_2">header.</span></p>
+        <p class="p_1">
+            <img src="Resources/Images/S031378/FEAS001 Chart of Accounts.png" class="img_1" />
+        </p>
+        <h2 class="Heading2">Report Columns</h2>
+        <table class="table_1">
+            <col class="col_3" />
+            <col class="col_4" />
+            <col class="col_4" />
+            <tr class="tr_1">
+                <td colspan="3" class="td_5">
+                    <p class="TableParagraph_1">Fund</p>
+                </td>
+            </tr>
+            <tr class="tr_2">
+                <td colspan="3" class="td_6">
+                    <p class="TableParagraph_2">Report Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td colspan="3" class="td_7">
+                    <p class="TableParagraph_3">[Finance Master].[Budget Ledger Definition].[Fund]</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_4">Expression Field</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_5">Database Table</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_6">Database Field</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_10">
+                    <p class="TableParagraph_3">Fund</p>
+                </td>
+                <td colspan="2" class="td_11">
+                    <p class="TableParagraph_3">Derived from glg_gen_mstr.glg_fund_ndx and glk_key_mstr.glk_grp_part01 - 08</p>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+        <table class="table_1">
+            <col class="col_3" />
+            <col class="col_4" />
+            <col class="col_4" />
+            <tr class="tr_4">
+                <td colspan="3" class="td_12">
+                    <p class="TableParagraph_7">Fund Description</p>
+                </td>
+            </tr>
+            <tr class="tr_2">
+                <td colspan="3" class="td_6">
+                    <p class="TableParagraph_8">Report Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td colspan="3" class="td_7">
+                    <p class="TableParagraph_9">[Finance Master].[Budget Ledger Definition].[Fund Long Description]</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_10">Expression Field</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_11">Database Table</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_5">Database Field</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_10">
+                    <p class="TableParagraph_9">Fund</p>
+                </td>
+                <td colspan="2" class="td_11">
+                    <p class="TableParagraph_9">Derived from glg_gen_mstr.glg_fund_ndx and glk_grp_mstr.glk_grp_dl</p>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+        <table class="table_1">
+            <col class="col_3" />
+            <col class="col_4" />
+            <col class="col_4" />
+            <tr class="tr_4">
+                <td colspan="3" class="td_12">
+                    <p class="TableParagraph_12">Account</p>
+                </td>
+            </tr>
+            <tr class="tr_2">
+                <td colspan="3" class="td_6">
+                    <p class="TableParagraph_2">Report Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td colspan="3" class="td_7">
+                    <p class="TableParagraph_3">trim([Budget Organization Key])||' - '||trim([Budget Object])</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_4">Expression Field</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_5">Database Table</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_6">Database Field</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_7">
+                    <p class="TableParagraph_3">Budget Organization Key</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_3">glba_budact_mstr</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_3">glba_key</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_3">Budget Object</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_3">glba_budact_mstr</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_3">glba_obj</p>
+                </td>
+            </tr>
+            <tr class="tr_5">
+                <td colspan="3" class="td_14">
+                    <p class="TableParagraph_13"> </p>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+        <table class="table_1">
+            <col class="col_3" />
+            <col class="col_4" />
+            <col class="col_4" />
+            <tr class="tr_1">
+                <td colspan="3" class="td_5">
+                    <p class="TableParagraph_1">Key Description</p>
+                </td>
+            </tr>
+            <tr class="tr_2">
+                <td colspan="3" class="td_6">
+                    <p class="TableParagraph_2">Report Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td colspan="3" class="td_7">
+                    <p class="TableParagraph_3">[Finance Master].[Budget].[Budget Organization Key Description]</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_4">Expression Field</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_11">Database Table</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_6">Database Field</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_7">
+                    <p class="TableParagraph_3">Budget Organization Key Description</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_3">glk_key_mstr</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_3">glk_title_ld</p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_2"> </p>
+        <table class="table_2">
+            <col class="col_4" />
+            <col class="col_4" />
+            <col class="col_4" />
+            <tr class="tr_6">
+                <td colspan="3" class="td_5">
+                    <p class="TableParagraph_14">Object Description</p>
+                </td>
+            </tr>
+            <tr class="tr_2">
+                <td colspan="3" class="td_6">
+                    <p class="TableParagraph_2">Report Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td colspan="3" class="td_7">
+                    <p class="TableParagraph_3">[Chart of Accounts].[Object Code Information].[Object Long Description]</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_15">Expression Field</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_15">Database Table</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_15">Database Field</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_7">
+                    <p class="TableParagraph_3">Object Long Description</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_3">glo_obj_mstr</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_9">glo_obj_ld</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BodyText_1"> </p>
+        <table class="table_2">
+            <col class="col_4" />
+            <col class="col_4" />
+            <col class="col_4" />
+            <tr class="tr_1">
+                <td colspan="3" class="td_5">
+                    <p class="TableParagraph_1">Key Status</p>
+                </td>
+            </tr>
+            <tr class="tr_2">
+                <td colspan="3" class="td_6">
+                    <p class="TableParagraph_2">Report Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td colspan="3" class="td_7">
+                    <p class="TableParagraph_3">[Finance Master].[Budget Organization Keys].[Organization Key Status]</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_8">
+                    <p class="TableParagraph_15">Expression Field</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_15">Database Table</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_15">Database Field</p>
+                </td>
+            </tr>
+            <tr class="tr_3">
+                <td class="td_7">
+                    <p class="TableParagraph_3">Organization Key Status</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_3">glk_key_mstr</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_9">glk_stat</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">Miscellaneous</h2>
+        <table class="table_2">
+            <col class="col_5" />
+            <col class="col_6" />
+            <col class="col_6" />
+            <col class="col_7" />
+            <tr class="tr_7">
+                <td colspan="4" class="td_5">
+                    <p class="TableParagraph_1">Query Filters</p>
+                </td>
+            </tr>
+            <tr class="tr_8">
+                <td class="td_6">
+                    <p class="TableParagraph_16">Query</p>
+                </td>
+                <td class="td_15">
+                    <p class="TableParagraph_17">Detail Filter</p>
+                </td>
+                <td class="td_15">
+                    <p class="TableParagraph_18">Required/Optional</p>
+                </td>
+                <td class="td_15">
+                    <p class="TableParagraph_19">Detail Filter Expression</p>
+                </td>
+            </tr>
+            <tr class="tr_9">
+                <td class="td_7">
+                    <p class="TableParagraph_20">Chart of Accounts</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_20">Fiscal Year</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_21">Required</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_21">[Fiscal Year] = ?Select_Year?</p>
+                </td>
+            </tr>
+            <tr class="tr_4">
+                <td class="td_8">
+                    <p class="TableParagraph_22">Chart of Accounts</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_22">Budget Code</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_23">Required</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_24">[Budget Code] = [Finance Master].[Budget Ledger</p>
+                    <p class="TableParagraph_24">Definition].[Default Budget Version]</p>
+                </td>
+            </tr>
+            <tr class="tr_9">
+                <td class="td_7">
+                    <p class="TableParagraph_20">Chart of Accounts</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_20">Budget Ledger</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_21">Required</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_21">[Budget Ledger] = ?Select_Ledger?</p>
+                </td>
+            </tr>
+            <tr class="tr_9">
+                <td class="td_8">
+                    <p class="TableParagraph_20">Chart of Accounts</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_20">Org Key</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_21">Optional</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_21">[Budget Organization Key] in ?Select_Key?</p>
+                </td>
+            </tr>
+            <tr class="tr_9">
+                <td class="td_7">
+                    <p class="TableParagraph_20">Chart of Accounts</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_20">Fund</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_21">Optional</p>
+                </td>
+                <td class="td_13">
+                    <p class="TableParagraph_21">[Fund] in ?Select_Fund?</p>
+                </td>
+            </tr>
+            <tr class="tr_9">
+                <td class="td_8">
+                    <p class="TableParagraph_20">Chart of Accounts</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_20">Object Type</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_21">Optional</p>
+                </td>
+                <td class="td_9">
+                    <p class="TableParagraph_21">[Object Type] in ?Object_Type?</p>
+                </td>
+            </tr>
+        </table>
+        <p> </p>
+    </body>
+</html>
